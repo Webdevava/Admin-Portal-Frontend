@@ -11,7 +11,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {" "}
+        <div className="flex items-center justify-center mb-2 fixed">
+          <img
+            src="https://static.wixstatic.com/media/abf3bf_155dcf18312d44fbb8c99405fe6446d0~mv2.png/v1/crop/x_164,y_104,w_752,h_769/fill/w_109,h_111,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Untitled%20design%20(8)%20(1).png"
+            alt="Logo"
+            className="h-20"
+          />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
